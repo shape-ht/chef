@@ -1,34 +1,45 @@
 #!/usr/bin/perl
-#CHEF - A configurable hardware trojan evaluation framework
-#Copyright (C) 2015  Daniel Neubacher and Christian Krieg
-#
-#This program is free software; you can redistribute it and/or
-#modify it under the terms of the GNU General Public License
-#as published by the Free Software Foundation; either version 2
-#of the License, or (at your option) any later version.
-#
-#This program is distributed in the hope that it will be useful,
-#but WITHOUT ANY WARRANTY; without even the implied warranty of
-#MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#GNU General Public License for more details.
+# CHEF - A configurable hardware trojan evaluation framework
+# Copyright (C) 2015  Daniel Neubacher and Christian Krieg
+# 
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License
+# as published by the Free Software Foundation; either version 2
+# of the License, or (at your option) any later version.
+# 
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
 
-#You should have received a copy of the GNU General Public License
-#along with this program; if not, write to the Free Software
-#Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+# 
+# Please cite the paper in which we introduced CHEF:
+# 
+# Krieg, C. & Neubacher, D. CHEF: A Configurable Hardware Trojan
+# Evaluation Framework Proceedings of the 10th Workshop on Embedded
+# Systems Security (WESS 2015), 2015
 #
-#Please cite the paper in which we introduced CHEF:
-#
-#Krieg, C. & Neubacher, D. CHEF: A Configurable Hardware Trojan
-#Evaluation Framework Proceedings of the 10th Workshop on Embedded
-#Systems Security (WESS 2015), 2015
-#
-#@INPROCEEDINGS{Krieg2015,
-#  author = {Christian Krieg and Daniel Neubacher},
-#  title = {CHEF: A Configurable Hardware Trojan Evaluation Framework},
-#  booktitle = {Proceedings of the 10th Workshop on Embedded Systems
-#Security (WESS 2015)},
-#  year = {2015},
-#}
+# @inproceedings{Krieg:2015:CCH:2818362.2818371,
+# author = {Krieg, Christian and Neubacher, Daniel},
+# title = {CHEF: A Configurable Hardware Trojan Evaluation Framework},
+# booktitle = {Proceedings of the WESS'15: Workshop on Embedded Systems Security},
+# series = {WESS'15},
+# year = {2015},
+# isbn = {978-1-4503-3667-3},
+# location = {Amsterdam, Netherlands},
+# pages = {9:1--9:6},
+# articleno = {9},
+# numpages = {6},
+# url = {http://doi.acm.org/10.1145/2818362.2818371},
+# doi = {10.1145/2818362.2818371},
+# acmid = {2818371},
+# publisher = {ACM},
+# address = {New York, NY, USA},
+# keywords = {Experiment automation, electronic design automation, hardware Trojan detection, test data normalization},
+# } 
 
 
 use strict;
@@ -253,35 +264,47 @@ sub init {
     $tee=IO::Tee->new(\*STDOUT,\*$logfilehandle); 
 
   print "CHEF - A configurable hardware trojan evaluation framework
-#Copyright (C) 2015  Daniel Neubacher and Christian Krieg
-#
-#This program is free software; you can redistribute it and/or
-#modify it under the terms of the GNU General Public License
-#as published by the Free Software Foundation; either version 2
-#of the License, or (at your option) any later version.
-#
-#This program is distributed in the hope that it will be useful,
-#but WITHOUT ANY WARRANTY; without even the implied warranty of
-#MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#GNU General Public License for more details.
-#
-#You should have received a copy of the GNU General Public License
-#along with this program; if not, write to the Free Software
-#Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
-#
-#Please cite the paper in which we introduced CHEF:
-#
-#Krieg, C. & Neubacher, D. CHEF: A Configurable Hardware Trojan
-#Evaluation Framework Proceedings of the 10th Workshop on Embedded
-#Systems Security (WESS 2015), 2015
-#
-#\@INPROCEEDINGS{Krieg2015,
-#  author = {Christian Krieg and Daniel Neubacher},
-#  title = {CHEF: A Configurable Hardware Trojan Evaluation Framework},
-#  booktitle = {Proceedings of the 10th Workshop on Embedded Systems
-#Security (WESS 2015)},
-#  year = {2015},
-#}\n";
+ Copyright (C) 2015  Daniel Neubacher and Christian Krieg
+ 
+ This program is free software; you can redistribute it and/or
+ modify it under the terms of the GNU General Public License
+ as published by the Free Software Foundation; either version 2
+ of the License, or (at your option) any later version.
+ 
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ 
+ You should have received a copy of the GNU General Public License
+ along with this program; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+ 
+ Please cite the paper in which we introduced CHEF:
+ 
+ Krieg, C. & Neubacher, D. CHEF: A Configurable Hardware Trojan
+ Evaluation Framework Proceedings of the 10th Workshop on Embedded
+ Systems Security (WESS 2015), 2015
+ 
+ \@inproceedings{Krieg:2015:CCH:2818362.2818371,
+   author = {Krieg, Christian and Neubacher, Daniel},
+   title = {CHEF: A Configurable Hardware Trojan Evaluation Framework},
+   booktitle = {Proceedings of the WESS'15: Workshop on Embedded Systems Security},
+   series = {WESS'15},
+   year = {2015},
+   isbn = {978-1-4503-3667-3},
+   location = {Amsterdam, Netherlands},
+   pages = {9:1--9:6},
+   articleno = {9},
+   numpages = {6},
+   url = {http://doi.acm.org/10.1145/2818362.2818371},
+   doi = {10.1145/2818362.2818371},
+   acmid = {2818371},
+   publisher = {ACM},
+   address = {New York, NY, USA},
+   keywords = {Experiment automation, electronic design automation, hardware Trojan detection, test data normalization},
+ } 
+\n";
   print color 'green';
   print $tee "Initializing\n", color 'reset';
   my ($sec,$min,$hour,$mday,$mon,$year,$wday,$yday,$isdst) = localtime(time);
